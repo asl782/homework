@@ -11,20 +11,24 @@ namespace StringExtension.Extensions.Tests
     [TestClass()]
     public class AToZExtensionTests
     {
-       
-    }
-}
-
-namespace StringExtensionTests.Extensions
-{
-    class AToZExtensionTests
-    {
-
         [TestMethod()]
-        public void ChangeAToZTestIgnoreCapitals()
+        public void ChangeAToZIgnoreCapitalsTest()
         {
-            Assert.;
+            string testStr = "aZzAabcdAb";
+            string expectedStr = "zZzZzbcdZb";
+            var result = testStr.ChangeAToZ(Enums.LetterTypeEnum.LetterType.IgnoreCapitals);
+            
+            Assert.AreEqual(expectedStr, result);
         }
 
+        [TestMethod()]
+        public void ChangeAToZAcceptCapitalsTest()
+        {
+            string testStr = "aZzAabcdAb";
+            string expectedStr = "zZzAzbcdAb";
+            var result = testStr.ChangeAToZ(Enums.LetterTypeEnum.LetterType.AcceptCapitals);
+            
+            Assert.AreEqual(expectedStr, result);
+        }
     }
 }

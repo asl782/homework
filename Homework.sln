@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileCompression", "FileComp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoTests", "LottoTests\LottoTests.csproj", "{95B6E452-8DD9-4B56-AB33-3B2309713A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExtensionTests1", "StringExtensionTests1\StringExtensionTests1.csproj", "{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExtensionTests", "StringExtensionTests\StringExtensionTests.csproj", "{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
