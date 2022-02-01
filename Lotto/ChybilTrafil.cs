@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Lotto
 {
-    class ChybilTrafil
+    public class ChybilTrafil
     {
-        const int ileLiczb = 6;
-        const int zakresLosowaniaMin = 1;
-        const int zakresLosowaniaMax = 49;
+        public const int ileLiczb = 6;
+        public const int zakresLosowaniaMin = 1;
+        public const int zakresLosowaniaMax = 49;
                 
         public static List<int>[] GenerujKupon(int ileZakladow)
         {

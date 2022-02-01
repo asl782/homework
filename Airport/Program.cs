@@ -15,7 +15,7 @@ namespace Airport
             const int planesInTheAir = 5;
 
             var planes = new Plane[numberOfPlanes];
-            var runway = new Runaway();
+            var runway = new Runway();
 
             for(int i = 0; i < numberOfPlanes; i++)
             {

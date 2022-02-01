@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListVsDictionary", "ListVsD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Airport", "Airport\Airport.csproj", "{B9735655-3850-4829-9083-37195C393799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileCompression", "FileCompression\FileCompression.csproj", "{1A21137D-0439-4574-9F3A-5587FB1A2091}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileCompression", "FileCompression\FileCompression.csproj", "{1A21137D-0439-4574-9F3A-5587FB1A2091}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LottoTests", "LottoTests\LottoTests.csproj", "{95B6E452-8DD9-4B56-AB33-3B2309713A11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringExtensionTests1", "StringExtensionTests1\StringExtensionTests1.csproj", "{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{1A21137D-0439-4574-9F3A-5587FB1A2091}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A21137D-0439-4574-9F3A-5587FB1A2091}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A21137D-0439-4574-9F3A-5587FB1A2091}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B6E452-8DD9-4B56-AB33-3B2309713A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B6E452-8DD9-4B56-AB33-3B2309713A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B6E452-8DD9-4B56-AB33-3B2309713A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B6E452-8DD9-4B56-AB33-3B2309713A11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD632AF-DA4D-44EA-A649-2E96A2CD2B8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

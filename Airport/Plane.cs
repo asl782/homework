@@ -13,13 +13,13 @@ namespace Airport
 
         public FlightMode FlightStatus { get; private set; }
         public int PlaneID { get; private set; }
-        public Runaway Runaway { get; set; }
+        public Runway Runway { get; set; }
 
-        public Plane(int planeID, FlightMode status, Runaway runaway)
+        public Plane(int planeID, FlightMode status, Runway runway)
         {
             PlaneID = planeID;
             FlightStatus = status;
-            Runaway = runaway;
+            Runway = runway;
         }
 
         public void FlightLoop()
@@ -51,14 +51,14 @@ namespace Airport
         {
             const int delay = 2000;
            
-            if(Runaway.GivePermition())
+            if(Runway.GivePermission())
             {
                 Console.WriteLine($"Plane {PlaneID} is taking off");
                 FlightStatus = FlightMode.isTakingOff;
                 Thread.Sleep(delay);
                 FlightStatus = FlightMode.inTheAir;
                 Console.WriteLine($"Plane {PlaneID} is in the air");
-                Runaway.ReleaseRunway();
+                Runway.ReleaseRunway();
             }
             else
             {
@@ -72,14 +72,14 @@ namespace Airport
         {
             int delay = 2000;
 
-            if(Runaway.GivePermition())
+            if(Runway.GivePermission())
             {
                 Console.WriteLine($"Plane {PlaneID} is landing");
                 FlightStatus = FlightMode.isLanding;
                 Thread.Sleep(delay);
                 FlightStatus = FlightMode.onTheGround;
                 Console.WriteLine($"Plane {PlaneID} is on the ground");
-                Runaway.ReleaseRunway();
+                Runway.ReleaseRunway();
             }
             else
             {

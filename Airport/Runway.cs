@@ -6,26 +6,26 @@ using System.Threading.Tasks;
 
 namespace Airport
 {
-    public class Runaway
+    public class Runway
     {
-        public enum RunawayMode {busy, free};
+        public enum RunwayMode {busy, free};
         
-        public RunawayMode runawayStatus { get; private set; }
+        public RunwayMode runwayStatus { get; private set; }
 
-        public Runaway()
+        public Runway()
         {
-            runawayStatus = RunawayMode.free;
+            runwayStatus = RunwayMode.free;
         }
 
         private readonly Object runwayLock = new Object();
 
-        public bool GivePermition()
+        public bool GivePermission()
         {
             lock (runwayLock)
             {
-                if (runawayStatus == RunawayMode.free)
+                if (runwayStatus == RunwayMode.free)
                 {
-                    runawayStatus = RunawayMode.busy;
+                    runwayStatus = RunwayMode.busy;
                     return true;
                 }
                 else
@@ -37,7 +37,7 @@ namespace Airport
 
         public void ReleaseRunway()
         {
-            runawayStatus = RunawayMode.free;
+            runwayStatus = RunwayMode.free;
         }
     }
 }
